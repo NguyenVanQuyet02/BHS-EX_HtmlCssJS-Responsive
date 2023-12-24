@@ -866,3 +866,37 @@
     background: var(--pink-text-color);
 
 }
+
+@media (max-width: 739px) {
+    body {
+        width: 100%;
+    }
+
+    .header {
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .header__navigate-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    #header .menu-icon {
+        display: none;
+    }
+}
+
+@media(min-width: 740px) and (max-width: 1023px) {
+    .header {
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .header__navigate-menu {
+        display: none;
+    }
+}
+
+@media(max-width: 1023px) {}
