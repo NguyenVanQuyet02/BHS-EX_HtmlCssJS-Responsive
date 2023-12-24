@@ -38,6 +38,11 @@ input {
     border-color: transparent;
 }
 
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
 .input-style-default-size-M {
     border: 1px solid #D9DDFE;
     width: 242.211px;

@@ -12,6 +12,14 @@
     />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/home1Style/index.css" />
+    <script>
+      function scrollToTopBtn() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+    </script>
   </head>
   <body>
     <header class="header">
@@ -374,7 +382,7 @@
         <p class="footer__copyright">
           © AltDesain Studio 2021 - All right reserved.
         </p>
-        <button class="footer__arrow-up icon-center">
+        <button class="footer__arrow-up icon-center" onclick="scrollToTopBtn()">
           <img src="./assets/icons/arrow-up.png" alt="up" />
         </button>
       </div>
