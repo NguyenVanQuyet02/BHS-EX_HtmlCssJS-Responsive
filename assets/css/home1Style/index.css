@@ -961,11 +961,11 @@
     .slider__text {
         margin: 0;
         margin: 0 auto;
-        margin-top: 68px;
+        margin-top: 20px;
     }
 
     .slider__text-title {
-        font-size: 26px;
+        font-size: 18px;
         width: 300px;
         height: auto;
         margin-bottom: 24px;
@@ -974,7 +974,7 @@
     .slider__text-desc {
         max-width: 350px;
         height: auto;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .slider__img {
@@ -983,12 +983,18 @@
         margin: 0;
     }
 
+    .slider__text-btn {
+        width: 130px;
+        height: 48px;
+        font-size: 12px;
+        border-color: transparent;
+    }
 
     .services-cards__item {
         margin-bottom: 36px;
-        width: 300px;
-        height: 380px;
-        padding-top: 28px;
+        width: 254px;
+        height: 320px;
+        padding-top: 20px;
 
     }
 
@@ -997,19 +1003,26 @@
     }
 
     .core-services__title {
-        font-size: 26px;
+        font-size: 18px;
         max-width: 400px;
         height: auto;
     }
 
     .core-services__bottom-desc {
         height: auto;
+        max-width: 300px;
+        margin: 0 auto;
         margin-bottom: 40px;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .services-cards__item-desc {
-        font-size: 12px;
+        font-size: 10px;
+        max-width: 200px;
+    }
+
+    .services-cards__item img {
+        margin-bottom: 8px;
     }
 
     .content-about-us {
@@ -1028,12 +1041,12 @@
     }
 
     .content-about-us__text-title {
-        font-size: 26px;
+        font-size: 18px;
 
     }
 
     .content-about-us__text-bottom-desc {
-        font-size: 12px;
+        font-size: 10px;
         margin-bottom: 24px;
     }
 
@@ -1049,6 +1062,34 @@
         row-gap: 24px;
     }
 
+    .about-us__text-button--learn-more {
+
+        width: 130px;
+        height: 48px;
+        font-size: 12px;
+        border-color: transparent;
+
+    }
+
+    .about-us__text-button--watch-video img {
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+    }
+
+    .about-us__text-button--watch-video span {
+        width: 100px;
+        height: 18px;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .teams__title-desc--desc-bottom {
+        font-size: 12px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
     .professional-teams__title-desc {
         margin-bottom: 40px;
     }
@@ -1057,9 +1098,18 @@
         margin-bottom: 48px;
     }
 
+    .professional-teams__card>img {
+        margin-bottom: 20px;
+    }
+
+    .professional-teams__card-desc-bottom {
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
     .teams__title-desc--title {
         max-width: 350px;
-        font-size: 26px;
+        font-size: 18px;
         height: auto;
     }
 
@@ -1127,13 +1177,36 @@
     }
 
     .input-mobile-styles {
-        max-width: 320px;
+        max-width: 280px;
         width: 100%;
-        margin-bottom: 20px;
+        height: 48px;
+        min-height: 48px;
+        margin-bottom: 12px;
+    }
+
+    .input-textarea-mobile-styles {
+        max-width: 280px;
+        width: 100%;
+        height: 148px;
+        margin-bottom: 12px;
+    }
+
+    .block~textarea,
+    .block~input {
+        margin: 0 auto;
+        margin-bottom: 12px;
+    }
+
+    .btn-submit-form-contact {
+        width: 180px;
+        height: 48px;
+
+        font-size: 12px;
+
     }
 
     .content-contact__form-title {
-        font-size: 26px;
+        font-size: 18px;
         max-width: 320px;
         height: auto;
     }
@@ -1142,6 +1215,7 @@
         max-width: 320px;
         height: auto;
         margin-bottom: 30px;
+        font-size: 12px;
     }
 
     .footer {
@@ -1153,9 +1227,24 @@
     }
 
 
-    .footer__pages,
-    .footer__infor {
-        display: none;
+
+    .footer__infor ul>li a,
+    .footer__pages ul>li a,
+    .footer__pages>p,
+    .footer__infor>p {
+        font-size: 10px;
+    }
+
+    .footer__pages-title {
+        width: auto;
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+
+    .footer__pages-item {
+        min-width: 80px;
+        margin-bottom: 0px;
     }
 
     .footer-social-icons {
@@ -1163,8 +1252,50 @@
     }
 
     .footer__logo-text {
-        padding: 0;
+        margin-top: 18px;
+        max-width: 150px;
+        display: inline-block;
         margin-bottom: 60px;
+        padding-left: 0px;
+        margin-left: -16px;
+        position: relative;
+    }
+
+    .footer__pages {
+        position: absolute;
+        top: 170px;
+        right: 186px;
+    }
+
+    .footer__infor {
+        position: absolute;
+        top: 170px;
+        right: 16px;
+    }
+
+    .footer__copyright {
+        right: 20px;
+        bottom: 50px;
+    }
+
+    .footer__arrow-up {
+        bottom: 96px;
+        right: 24px;
+    }
+
+    .footer__logo-text>em,
+    .footer__logo-text>p {
+        padding: 0;
+        font-size: 10px;
+        margin-bottom: 60px;
+        margin: 8px 0px;
+        max-width: 133px;
+        height: auto;
+    }
+
+    .footer__logo-desc-bottom {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .footer__logo {
@@ -1284,8 +1415,28 @@
         padding: 160px 40px;
     }
 
-    .footer__infor {
-        display: none;
+    .footer__logo-text {
+        max-width: 286px;
+        display: inline-block;
+        margin-bottom: 120px;
+        padding-left: 0px;
+        margin-left: 12px;
+        /* position: relative; */
+    }
+
+    .footer__logo-desc-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__logo {
+        margin-left: 30px;
+        margin-right: 0px;
+    }
+
+    .footer__infor,
+    .footer__pages {
+        margin-top: 42px;
     }
 }
 
