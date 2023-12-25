@@ -28,8 +28,8 @@
 }
 
 .content-container {
-    max-width: 1140px;
-    margin: 0px 150px;
+    max-width: 1440px;
+    padding: 0px 150px;
     margin: 0 auto;
 }
 
@@ -273,7 +273,7 @@
 }
 
 .statistical-item-text p {
-    min-width: 122px;
+    width: 132px;
     height: 23px;
     flex-shrink: 0;
     color: var(--text-color-D8D);
@@ -304,7 +304,6 @@
     height: 249px !important;
     flex-shrink: 0;
     border-radius: 25px 25px 0px 0px;
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat, #C4C4C4;
     margin: 0px !important;
 }
 
@@ -428,6 +427,413 @@
     letter-spacing: 1.2px;
 }
 
-@media(max-width:739px) {}
+@media(max-width:1439px) {
+    .content-container {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0px 50px;
+    }
+}
 
-@media(min-width: 740px) and (max-width: 1024px) {}
+@media (max-width:1023px) {
+    .content-about-us {
+        margin-bottom: 100px;
+    }
+
+    .content-why {
+        margin-bottom: 90px;
+    }
+
+    .content-why__statistical {
+        margin-left: 40px;
+        flex-direction: column;
+        margin-top: -116px;
+    }
+
+    .content-professional-teams-container {
+        margin-bottom: 100px;
+    }
+
+    .content-req-call-services {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 90px;
+    }
+
+    .call-services__input {
+        text-align: right;
+        max-width: 500px;
+    }
+
+    .call-services__input-input {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .call-services__text {
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .call-services__input-desc {
+        display: inline;
+    }
+}
+
+@media(max-width:739px) {
+    .header {
+        margin-bottom: 80px;
+    }
+
+    .content-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .bg-header {
+        height: 568px;
+        background: url('../../img/Home2/Background\ Slider.png') top left/100% 568px no-repeat;
+    }
+
+    .slider {
+        margin-bottom: 120px;
+        justify-content: center;
+    }
+
+    .slider__text {
+        margin: 0;
+    }
+
+    .slider__text-title {
+        width: auto;
+        height: auto;
+    }
+
+    .slider__btn-play svg {
+        width: 60px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .content-about-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    .content-about-us__text-bottom-desc,
+    .content-about-us__text-title {
+        max-width: 320px;
+        height: auto;
+    }
+
+    .content-about-us__text-bottom-desc {
+        margin-bottom: 20px;
+    }
+
+    .content-about-us__img {
+        margin: 0;
+        width: 60%;
+        height: auto;
+    }
+
+    .professional-teams__title-desc {
+        margin-bottom: 10px;
+    }
+
+    .professional-teams__cards {
+        margin-bottom: 60px;
+    }
+
+    .professional-teams__card {
+        width: 228px;
+        height: 266px;
+        padding: 20px 20px;
+    }
+
+    .content-why {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 70px;
+        height: 200px;
+    }
+
+    .content-why__text {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .content-why__text h3 {
+        font-size: 18px;
+        width: 168px;
+        height: auto;
+    }
+
+    .content-why__text p {
+        font-size: 10px;
+        max-width: 220px;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .content-why__statistical {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        column-gap: 0;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .statistical-item {
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .statistical-item img {
+        width: 18px;
+        height: auto;
+        margin-right: 4px;
+    }
+
+    .statistical-item-text h3 {
+        font-size: 12px;
+        max-width: 80px;
+        height: auto;
+    }
+
+    .statistical-item-text p {
+        font-size: 8px;
+        display: block;
+        width: 65px;
+        height: auto;
+    }
+
+    .bg-wave-line {
+        top: 2000px;
+        width: 224px;
+        height: 180.34px;
+        background:
+            url('../../img/Home2/Wave\ Line.png') top left/224px 180.34px no-repeat;
+    }
+
+    .bg-why-choosing-us {
+        top: 2155px;
+        height: 299.34px;
+        background:
+            url('../../img/Home2/Background-wcu.png') top left/100% 299.34px no-repeat;
+    }
+
+    .bg-services {
+        top: 3113px;
+
+        height: 708.081px;
+        flex-shrink: 0;
+        background:
+            url('../../img/Home2/Background\ Wave.png') top left/100% 708.081px no-repeat;
+    }
+
+    .teams__title-desc--desc-top {
+        font-size: 12px;
+    }
+
+    .teams__title-desc--title {
+        font-size: 18px;
+    }
+
+    .teams__title-desc--desc-bottom {
+        font-size: 10px;
+        height: auto;
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+
+    .card-mobile-styles {
+        width: 100% !important;
+        height: auto !important;
+        padding: 0px 0px !important;
+    }
+
+    .card--mobile-styles {
+        padding: 0;
+        height: auto;
+
+        overflow: hidden;
+    }
+
+    .card-text {
+        padding: 12px 18px;
+    }
+
+    .dimension-card-h2__title {
+        font-size: 14px;
+        width: 188px;
+        height: auto;
+        margin-bottom: 6px;
+    }
+
+    .dimension-card-h2__desc {
+        font-size: 10px;
+        width: 188px;
+        height: auto;
+        margin-bottom: 6px;
+    }
+
+    .professional-teams__card-desc-top {
+        font-size: 12px;
+    }
+
+    .content-professional-teams-container {
+        margin-bottom: 80px;
+    }
+
+    .call-services__text h3 {
+        font-size: 18px;
+        width: auto;
+        height: auto;
+    }
+
+    .call-services__text p {
+        font-size: 10px;
+        width: 320px;
+        height: auto;
+        margin-bottom: 26px;
+    }
+
+    .call-services__input {
+        width: 300px;
+    }
+
+    .call-services__input-input button,
+    .call-services__input-input {
+        height: 40px;
+    }
+
+    .call-services__input-input input {
+        font-size: 10px;
+        padding: 0 14px;
+    }
+
+    .call-services__input-input button {
+        width: 60px;
+    }
+
+    .icon-center img {
+        width: 18px;
+    }
+
+    .call-services__input-desc {
+        font-size: 10px;
+    }
+
+    .footer__logo-desc-top {
+        font-size: 12px;
+        height: auto;
+    }
+
+    .footer__logo-desc-bottom,
+    .footer__logo-desc-mid {
+        font-size: 12px;
+    }
+}
+
+@media(min-width: 740px) and (max-width: 1024px) {
+    .header {
+        margin-bottom: 110px;
+    }
+
+    .bg-header {
+        height: 818px;
+        background: url('../../img/Home2/Background\ Slider.png') top left/100% 818px no-repeat;
+    }
+
+    .slider {
+        flex-direction: column-reverse;
+        flex-wrap: wrap-reverse;
+        row-gap: 24px;
+        margin-bottom: 170px;
+    }
+
+    .slider__text {
+        margin: 0;
+    }
+
+    .content-about-us {
+        flex-direction: column;
+        margin-bottom: 130px;
+    }
+
+    .content-about-us__img {
+        margin-right: 0;
+        margin: 0 auto;
+    }
+
+    .professional-teams__cards {
+        margin-bottom: 230px;
+    }
+
+    .content-req-call-services {
+        justify-content: center;
+    }
+
+    .col-gap-card-h2 {
+        margin-bottom: 0;
+    }
+
+    .content-why {
+        margin-bottom: 160px;
+        column-gap: 66px;
+    }
+
+    .content-why__text h3 {
+        max-width: 342px;
+    }
+
+    .content-why__text p {
+        margin-right: 0;
+        max-width: 322px;
+    }
+
+    .content-why__statistical {
+        column-gap: 40px;
+    }
+
+    .call-services__input-desc {
+        width: 100%;
+    }
+
+    .call-services__input-input {
+        max-width: 320px;
+        margin-left: 36px;
+    }
+
+    .bg-wave-line {
+        top: 2333px;
+        width: 524px;
+        height: 350.34px;
+        background:
+            url('../../img/Home2/Wave\ Line.png') top left/524px 350.34px no-repeat;
+    }
+
+    .bg-why-choosing-us {
+        top: 2640px;
+        height: 499.34px;
+        background:
+            url('../../img/Home2/Background-wcu.png') top left/100% 499.34px no-repeat;
+    }
+
+    .bg-services {
+        top: 3113px;
+
+        height: 1892.081px;
+        flex-shrink: 0;
+        background:
+            url('../../img/Home2/Background\ Wave.png') top left/100% 1892.081px no-repeat;
+    }
+}

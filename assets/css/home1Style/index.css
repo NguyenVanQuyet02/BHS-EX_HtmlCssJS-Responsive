@@ -1198,11 +1198,6 @@
     }
 }
 
-/* @media (max-width: 1024px) {
-    #header .menu-icon {
-        display: none;
-    }
-} */
 
 @media(min-width: 740px) and (max-width: 1439px) {
     .header {
