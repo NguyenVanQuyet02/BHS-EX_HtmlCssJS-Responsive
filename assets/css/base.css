@@ -14,6 +14,10 @@
     flex-shrink: 0;
 }
 
+body {
+    font-family: Poppins;
+
+}
 
 button {
     border-color: transparent;
@@ -32,6 +36,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 100%;
 }
 
 input {
