@@ -495,6 +495,10 @@
         height: auto;
     }
 
+    .content-about-us__img {
+        margin-right: 0;
+    }
+
     .content-about-us {
         margin-bottom: 100px;
         align-items: center;
@@ -572,6 +576,8 @@
     }
 
     .slider {
+        max-width: 100%;
+        /* overflow: hidden; */
         margin-bottom: 120px;
         justify-content: center;
     }
@@ -582,7 +588,8 @@
     }
 
     .slider__text-title {
-        width: auto;
+        min-width: unset !important;
+        width: 100%;
         height: auto;
     }
 
@@ -850,11 +857,16 @@
 
     .slider__text {
         margin: 0;
+        text-align: center;
     }
 
     .slider__text-title {
         min-width: 644px;
         height: auto;
+    }
+
+    .slider__text-desc {
+        margin: 12px auto;
     }
 
     .content-about-us {
