@@ -1,14 +1,39 @@
 .header {
-    margin-bottom: 204px;
+    margin-bottom: 206px;
 }
 
 .header__navigate-menu-item a {
     color: var(--text-color-D8D);
 }
 
+.header__logo {
+    margin-right: 194px;
+}
+
+.header__navigate-menu-item {
+    min-height: 24px;
+}
+
+.header__navigate-menu-item:nth-child(1) {
+    margin-right: 44px;
+}
+
+.header__navigate-menu-item:nth-child(2) {
+    margin-right: 42px;
+}
+
+.header__navigate-menu-item:nth-child(4),
+.header__navigate-menu-item:nth-child(3) {
+    margin-right: 45px;
+}
+
 .header__navigate-menu-item:first-child img,
 .header__navigate-menu-item:first-child a {
     color: var(--white-text-color);
+}
+
+.active a {
+    color: var(--white-text-color) !important;
 }
 
 .header__navigate-button-style-tablet {
@@ -42,7 +67,7 @@
     margin: 0;
     font-style: normal;
     flex-shrink: 0;
-    margin-right: 197px;
+    margin-right: 198px;
 }
 
 .slider__btn-play svg {
@@ -71,9 +96,10 @@
 .slider__text-desc {
     width: 501px;
     height: 78px;
+    margin-top: 4px;
     flex-shrink: 0;
     color: var(--text-color-D8D);
-    margin-bottom: 34px;
+    margin-bottom: 30px;
 }
 
 .slider__text-btn {
@@ -110,7 +136,8 @@
     height: 133px;
     flex-shrink: 0;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
+    line-height: 1.5;
 }
 
 .professional-teams__title-desc {
@@ -139,7 +166,7 @@
     height: 64px;
     flex-shrink: 0;
     margin: 0;
-    margin-bottom: 17px;
+    margin-bottom: 20px;
     border-radius: unset;
 }
 
@@ -177,7 +204,7 @@
 
 .bg-wave-line {
     position: absolute;
-    top: 1928px;
+    top: 1931px;
     left: 0;
     z-index: -10;
     width: 524px;
@@ -218,7 +245,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 125%;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 
 .content-why__text p {
@@ -238,7 +265,7 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 500px;
-    column-gap: 72px;
+    column-gap: 63px;
     margin-top: 5px;
     margin-left: -2px;
 
@@ -308,11 +335,11 @@
 }
 
 .card-text {
-    padding: 47px 36px;
+    padding: 48px 38px;
 }
 
 .dimension-card-h2__title {
-    width: 271px;
+    width: 288px;
     height: 58px;
     flex-shrink: 0;
 }
@@ -427,17 +454,55 @@
     letter-spacing: 1.2px;
 }
 
+/* footer */
+.footer-container {
+    margin: 0 auto;
+}
+
 @media(max-width:1439px) {
     .content-container {
-        max-width: 1140px;
+        max-width: 100%;
         margin: 0 auto;
         padding: 0px 50px;
     }
+
+    .slider__text {
+        margin-right: 0px;
+        text-align: left;
+    }
+
+
 }
 
-@media (max-width:1023px) {
+@media (max-width:1439px) {
+    .header {
+        margin-bottom: 180px;
+    }
+
+    .slider {
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        row-gap: 24px;
+        margin-bottom: 420px;
+    }
+
+    .slider__text {
+        margin: 0;
+    }
+
+    .slider__text-title {
+        min-width: 644px;
+        height: auto;
+    }
+
     .content-about-us {
         margin-bottom: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bg-why-choosing-us {
+        top: 2110px;
     }
 
     .content-why {
@@ -481,8 +546,18 @@
 }
 
 @media(max-width:739px) {
+    .header-container {
+        padding: 0 10px;
+    }
+
     .header {
         margin-bottom: 80px;
+        justify-content: space-between;
+    }
+
+    .header__logo {
+
+        margin-right: 0px;
     }
 
     .content-container {
@@ -503,6 +578,7 @@
 
     .slider__text {
         margin: 0;
+        text-align: center;
     }
 
     .slider__text-title {
@@ -520,7 +596,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 
     .content-about-us__text-bottom-desc,
@@ -548,8 +624,8 @@
     }
 
     .professional-teams__card {
-        width: 228px;
-        height: 266px;
+        width: 74%;
+        height: auto;
         padding: 20px 20px;
     }
 
@@ -602,7 +678,7 @@
 
     .statistical-item-text h3 {
         font-size: 12px;
-        max-width: 80px;
+        max-width: 46px;
         height: auto;
     }
 
@@ -613,8 +689,12 @@
         height: auto;
     }
 
+    .content-req-call-services {
+        margin-bottom: 40px;
+    }
+
     .bg-wave-line {
-        top: 2000px;
+        top: 1912px;
         width: 224px;
         height: 180.34px;
         background:
@@ -622,7 +702,7 @@
     }
 
     .bg-why-choosing-us {
-        top: 2080px;
+        top: 2070px;
         height: 299.34px;
         background:
             url('../../img/Home2/Background-wcu.png') top left/100% 299.34px no-repeat;
@@ -663,7 +743,7 @@
     .card--mobile-styles {
         padding: 0;
         height: auto;
-
+        width: 80%;
         overflow: hidden;
     }
 
@@ -690,7 +770,7 @@
     }
 
     .content-professional-teams-container {
-        margin-bottom: 80px;
+        margin-bottom: 30px;
     }
 
     .call-services__text h3 {
@@ -744,8 +824,16 @@
 }
 
 @media(min-width: 740px) and (max-width: 1024px) {
+    .header-container {
+        padding: 0px 20px;
+    }
+
     .header {
-        margin-bottom: 110px;
+        margin-bottom: 100px;
+    }
+
+    .header__logo {
+        margin-right: 12px;
     }
 
     .bg-header {
@@ -754,24 +842,49 @@
     }
 
     .slider {
-        flex-direction: column-reverse;
+        justify-content: center;
         flex-wrap: wrap-reverse;
         row-gap: 24px;
-        margin-bottom: 170px;
+        margin-bottom: 180px;
     }
 
     .slider__text {
         margin: 0;
     }
 
+    .slider__text-title {
+        min-width: 644px;
+        height: auto;
+    }
+
     .content-about-us {
-        flex-direction: column;
-        margin-bottom: 130px;
+        flex-direction: column-reverse;
+        margin-bottom: 80px;
     }
 
     .content-about-us__img {
+        min-width: 54%;
+        height: auto;
         margin-right: 0;
         margin: 0 auto;
+    }
+
+    .content-about-us__text {
+        margin-top: 30px;
+        width: 100%;
+        margin-bottom: 38px;
+    }
+
+    .content-about-us__text-bottom-desc,
+    .content-about-us__text-title {
+        min-width: 84%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+
+    .content-professional-teams-container {
+        margin-bottom: 0px;
     }
 
     .professional-teams__cards {
@@ -780,6 +893,7 @@
 
     .content-req-call-services {
         justify-content: center;
+        margin-top: 82px;
     }
 
     .col-gap-card-h2 {
@@ -787,21 +901,32 @@
     }
 
     .content-why {
-        margin-bottom: 160px;
-        column-gap: 66px;
+        margin-bottom: 120px;
+        justify-content: space-around;
+    }
+
+    .mb-home2 {
+        margin-bottom: 22px;
     }
 
     .content-why__text h3 {
-        max-width: 342px;
+        min-width: 88%px;
     }
 
     .content-why__text p {
         margin-right: 0;
-        max-width: 322px;
+        min-width: 90%;
+        height: auto;
+
+    }
+
+    .statistical-item {
+        margin-bottom: 24px;
     }
 
     .content-why__statistical {
         column-gap: 40px;
+        margin-top: -76px;
     }
 
     .call-services__input-desc {
@@ -822,14 +947,14 @@
     }
 
     .bg-why-choosing-us {
-        top: 2640px;
+        top: 2432px;
         height: 499.34px;
         background:
             url('../../img/Home2/Background-wcu.png') top left/100% 499.34px no-repeat;
     }
 
     .bg-services {
-        top: 3113px;
+        top: 2130px;
 
         height: 1892.081px;
         flex-shrink: 0;

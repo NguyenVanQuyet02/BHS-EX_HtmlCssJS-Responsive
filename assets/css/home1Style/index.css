@@ -1,4 +1,8 @@
 /* header style  */
+.header-container {
+    padding: 0px 150px;
+    margin: 0 auto;
+}
 
 .bg-header {
     width: 1266.422px;
@@ -13,7 +17,7 @@
 }
 
 .header {
-    padding: 0px 150px;
+    /* padding: 0px 150px; */
     margin-top: 41px;
     display: flex;
     align-items: center;
@@ -29,7 +33,7 @@
     width: 258px;
     height: 63px;
     flex-shrink: 0;
-    margin-right: 191px;
+    margin-right: 190px;
 }
 
 .header__logo-icon {
@@ -104,31 +108,78 @@
     align-items: center;
     justify-content: center;
     list-style: none;
-    column-gap: 45px;
-    margin-right: 45px;
+    margin-right: 51px;
 }
 
 .header__navigate-menu-item {
-    height: 24px;
+    min-height: 24px;
 }
 
-.header__navigate-menu-item:first-child a {
+.header__navigate-menu-item:nth-child(1) {
+    margin-right: 44px;
+}
+
+.header__navigate-menu-item:nth-child(2) {
+    margin-right: 42px;
+}
+
+.header__navigate-menu-item:nth-child(4),
+.header__navigate-menu-item:nth-child(3) {
+    margin-right: 45px;
+}
+
+.active>a {
     display: flex;
     align-items: center;
     column-gap: 5px;
-    color: #414880;
+    color: #414880 !important;
+}
 
+.sub-menu:hover .drop-down-menu__header {
+    display: block;
 }
 
 .header__navigate-menu-item a {
     text-decoration: none;
     color: var(--secondary-text-color);
-    font-family: Poppins;
     font-size: var(--font-size-16);
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     letter-spacing: 1.6px;
+}
+
+.sub-menu {
+    position: relative;
+}
+
+.drop-down-menu__header {
+    position: absolute;
+    min-width: 86px;
+    top: 100%;
+    left: -28px;
+    border-radius: 8px;
+    overflow: hidden;
+    height: auto;
+    display: none;
+}
+
+.drop-down-menu__header ul>li {
+    background-color: #e2e4f5;
+    width: 100%;
+    text-align: center;
+}
+
+.drop-down-menu__header ul>li a:hover {
+    background-color: #d9dcf3;
+    color: #414880;
+}
+
+.drop-down-menu__header ul>li a {
+    padding: 12px 20px;
+    display: block;
+    color: var(--secondary-text-color);
+    width: 116px;
 }
 
 .header__navigate-button {
@@ -147,18 +198,23 @@
 }
 
 /* slider */
+.slider-container {
+    padding: 0 60px;
+    margin: 0 auto;
+}
+
 .slider {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     /* margin: 0 auto; */
-    margin-bottom: 172px;
+    margin-bottom: 136.35px;
 }
 
 .slider__text {
-    margin-left: 189px;
-    margin-top: 20px;
+    margin-left: 188px;
+    margin-top: -16px;
     color: var(--primary-text-color);
     font-style: normal;
     flex-shrink: 0;
@@ -178,7 +234,7 @@
     height: 54px;
     font-size: var(--font-size-16);
     font-weight: 500;
-    line-height: normal;
+    line-height: 1.4;
     letter-spacing: 1.6px;
     margin-bottom: 28px;
 }
@@ -200,8 +256,11 @@
 }
 
 .slider__img {
+    display: flex;
     width: 601.5px;
-    height: 362.5px;
+    height: 397.5px;
+    justify-content: center;
+    align-items: center;
     margin-right: 153.5px;
     flex-shrink: 0;
 }
@@ -674,11 +733,15 @@
 }
 
 /* footer */
+.footer-container {
+    margin: 0 auto;
+}
+
 .footer {
+    padding: 0px 150px;
     width: 100%;
     height: 705.342px;
     position: relative;
-    padding: 0px 150px;
     padding-top: 225.34px;
     display: flex;
     justify-content: space-between;
@@ -856,9 +919,10 @@
 }
 
 .footer__arrow-up {
-    position: absolute;
-    bottom: 169px;
-    right: 65px;
+    display: none;
+    position: fixed;
+    bottom: 69px;
+    right: 66px;
     width: 36px;
     height: 36px;
     flex-shrink: 0;
@@ -891,7 +955,7 @@
     }
 
     .content {
-        padding: 0 20px;
+        padding: 0 30px;
     }
 
     .slider {
@@ -907,7 +971,8 @@
     }
 
     .content-about-us {
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
     }
 
     .professional-teams__cards {
@@ -916,17 +981,19 @@
     }
 
     .content-contact {
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
+        text-align: center;
     }
 
     .tablet-styles {
         box-shadow: 0px 25px 50px 25px #F6F7FF;
-        width: 424px;
+        width: 70%;
     }
 
     .content-about-us__text {
         margin: 0 auto;
         margin-top: 56px;
+        text-align: center;
     }
 
     .services-cards__item {
@@ -970,17 +1037,19 @@
         margin: 0;
         margin: 0 auto;
         margin-top: 20px;
+        text-align: center;
     }
 
     .slider__text-title {
-        width: 300px;
+        width: 100%;
         height: auto;
-        margin-bottom: 24px;
+        margin-bottom: 14px;
     }
 
     .slider__text-desc {
         max-width: 350px;
         height: auto;
+        margin-bottom: 18px;
     }
 
     .slider__img {
@@ -997,9 +1066,9 @@
 
     .services-cards__item {
         margin-bottom: 36px;
-        width: 254px;
-        height: 320px;
-        padding-top: 20px;
+        width: 80%;
+        height: auto;
+        padding-top: 26px;
 
     }
 
@@ -1009,14 +1078,15 @@
 
     .core-services__title {
         max-width: 400px;
+        width: 80%;
         height: auto;
     }
 
     .core-services__bottom-desc {
         height: auto;
-        max-width: 300px;
+        max-width: 86%;
         margin: 0 auto;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     .services-cards__item-desc {
@@ -1028,12 +1098,12 @@
     }
 
     .content-about-us {
-        margin-bottom: 80px;
+        margin-bottom: 40px;
     }
 
     .content-about-us__text {
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 20px;
         text-align: center;
     }
 
@@ -1079,12 +1149,12 @@
     }
 
     .teams__title-desc--desc-bottom {
-        max-width: 300px;
+        max-width: 90%;
         margin: 0 auto;
     }
 
     .professional-teams__title-desc {
-        margin-bottom: 40px;
+        margin-bottom: 16px;
     }
 
     .content-professional-teams-container {
@@ -1105,7 +1175,7 @@
     }
 
     .mobile-styles {
-        max-width: 300px;
+        max-width: 80%;
         height: auto;
         padding-bottom: 26px;
         padding-top: 26px;
@@ -1117,13 +1187,14 @@
 
     .content-contact__img {
         margin: 0;
-        width: 60%;
+        width: 80%;
         height: auto;
     }
 
     .content-contact__form {
         margin: 0px;
         text-align: center;
+        margin-left: 0px;
     }
 
     .bg-header {
@@ -1162,13 +1233,16 @@
     }
 
     .block {
-        display: block;
-        max-width: 320px;
+        /* display: block; */
+        flex-direction: column;
+        max-width: 300px;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 0;
     }
 
     .input-mobile-styles {
-        max-width: 280px;
+        max-width: 100%;
         width: 100%;
         height: 48px;
         min-height: 48px;
@@ -1176,7 +1250,7 @@
     }
 
     .input-textarea-mobile-styles {
-        max-width: 280px;
+        max-width: 100%;
         width: 100%;
         height: 148px;
         margin-bottom: 12px;
@@ -1196,19 +1270,22 @@
     }
 
     .content-contact__form-title {
-        max-width: 320px;
+        max-width: 300px;
+        margin: 12px 0px;
         height: auto;
     }
 
     .content-contact__form-bottom-desc {
-        max-width: 320px;
+        max-width: 300px;
         height: auto;
+        /* margin: 0 auto; */
         margin-bottom: 30px;
     }
 
+
     .footer {
-        margin-top: 60px;
-        padding: 0 16px;
+        margin-top: 20px;
+        padding: 0 10px;
         padding-top: 80px;
         height: 0;
         min-height: 470px;
@@ -1233,27 +1310,27 @@
         margin-top: 18px;
         max-width: 150px;
         display: inline-block;
-        margin-bottom: 60px;
+        margin-bottom: 44px;
         padding-left: 0px;
-        margin-left: -26px;
+        margin-left: -18px;
         position: relative;
     }
 
     .footer__pages {
         position: absolute;
         top: 170px;
-        right: 174px;
+        right: 160px;
     }
 
     .footer__infor {
         position: absolute;
         top: 170px;
-        right: -6px;
+        right: 10px;
     }
 
     .footer__copyright {
         right: 20px;
-        bottom: 50px;
+        bottom: 0px;
     }
 
     .footer__arrow-up {
@@ -1261,8 +1338,19 @@
         right: 24px;
     }
 
+    .footer__pages p,
+    .footer__infor p {
+        font-size: 11px;
+    }
+
+    .footer__pages ul>li a,
+    .footer__infor ul>li a {
+        font-size: 9px;
+    }
+
     .footer__logo-text>em,
     .footer__logo-text>p {
+        font-size: 9px;
         padding: 0;
         margin-bottom: 60px;
         margin: 8px 0px;
@@ -1310,43 +1398,75 @@
 @media(min-width: 740px) and (max-width: 1439px) {
     .header {
         padding: 0;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin-bottom: 100px;
     }
 
+    .professional-teams__title-desc {
+        margin-bottom: 20px;
+    }
 
     .slider {
         flex-wrap: wrap-reverse;
+        margin-bottom: 60px;
+    }
+
+    .slide__button {
+        margin-bottom: 60px;
+    }
+
+    .core-services__bottom-desc {
+        margin-bottom: 40px;
     }
 
     .slider__text {
         margin: 0;
+        text-align: center;
         margin: 0 auto;
-        margin-top: 68px;
+        margin-top: 40px;
     }
 
+    .slider__text-title {
+        min-width: 800px;
+        height: auto;
+        margin-bottom: 20px;
+    }
 
+    .slider__text-desc {
+        width: 100%;
+        height: auto;
+    }
 
     .content-services-cards {
         flex-wrap: wrap;
+        margin-bottom: 0px;
     }
 
-
-
-    .content-about-us {
-        flex-wrap: wrap-reverse;
+    .content-about-us__text-title {
+        width: auto;
     }
 
+    .content-about-us__text-bottom-desc {
+        width: 720px;
+        height: auto;
+    }
 
+    .content-about-us__text-button {
+        justify-content: center;
+    }
 
     .professional-teams__cards {
         flex-wrap: wrap;
         row-gap: 46px;
     }
 
+    .professional-teams__card-desc-bottom {
+        width: 80%;
+    }
 
-
-    .content-contact {
-        flex-wrap: wrap;
+    .content-about-us__img {
+        width: 80%;
+        height: auto;
     }
 
     .content-contact__img {
@@ -1355,6 +1475,30 @@
 
     .content-contact__form {
         margin: 0px;
+    }
+
+    .content-contact__form-title {
+        width: 100%;
+        height: auto;
+        margin: 12px auto;
+    }
+
+    .content-contact__form-bottom-desc {
+        width: 86%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .form-name {
+        justify-content: center;
+        margin-bottom: 16px;
+    }
+
+    .input-textarea,
+    .input-size-L {
+        margin: 0 auto;
+        margin-bottom: 16px;
     }
 
     .bg-header {

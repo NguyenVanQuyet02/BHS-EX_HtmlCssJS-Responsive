@@ -54,6 +54,17 @@ input:focus {
     outline: none;
 }
 
+li {
+    width: auto;
+    list-style: none;
+}
+
+a {
+    width: auto;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .input-style-default-size-M {
     border: 1px solid #D9DDFE;
     width: 242.211px;

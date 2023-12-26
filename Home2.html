@@ -14,6 +14,28 @@
     <link rel="stylesheet" href="./assets/css/home1Style/index.css" />
     <link rel="stylesheet" href="./assets/css/home2Style/index.css" />
     <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 640 ||
+          document.documentElement.scrollTop > 640
+        ) {
+          document.getElementById("scrollBtn").style.display = "block";
+        } else {
+          document.getElementById("scrollBtn").style.display = "none";
+        }
+      }
+
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
       function scrollToTopBtn() {
         window.scrollTo({
           top: 0,
@@ -23,89 +45,101 @@
     </script>
   </head>
   <body>
-    <header class="header">
-      <div class="header__logo">
-        <div class="header__logo-icon">
-          <img
-            class="logo__bg"
-            src="./assets/img/Ellipse BG.png"
-            alt="logo__bg"
-          />
-          <img
-            class="logo__circle-white-1"
-            src="./assets/img/Ellipse White 1.png"
-            alt="logo1"
-          />
-          <img
-            class="logo__circle-white-2"
-            src="./assets/img/Ellipse White 2.png"
-            alt="logo2"
-          />
-          <div class="logo__rectangle-blue logo-color-footer"></div>
+    <div class="header-container">
+      <header class="header">
+        <div class="header__logo">
+          <div class="header__logo-icon">
+            <img
+              class="logo__bg"
+              src="./assets/img/Ellipse BG.png"
+              alt="logo__bg"
+            />
+            <img
+              class="logo__circle-white-1"
+              src="./assets/img/Ellipse White 1.png"
+              alt="logo1"
+            />
+            <img
+              class="logo__circle-white-2"
+              src="./assets/img/Ellipse White 2.png"
+              alt="logo2"
+            />
+            <div class="logo__rectangle-blue logo-color-footer"></div>
+          </div>
+          <p class="header__logo-text logo-text-color-footer">Beautice</p>
         </div>
-        <p class="header__logo-text logo-text-color-footer">Beautice</p>
-      </div>
-      <nav class="header__navigate">
-        <ul class="header__navigate-menu">
-          <li class="header__navigate-menu-item">
-            <a href="#"
-              >Home
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="7"
-                height="7"
-                viewBox="0 0 7 7"
-                fill="none"
-              >
-                <line
-                  x1="3.5"
-                  y1="2.18557e-08"
-                  x2="3.5"
-                  y2="7"
-                  stroke="white"
-                />
-                <line
-                  x1="7"
-                  y1="3.5"
-                  x2="-4.37114e-08"
-                  y2="3.5"
-                  stroke="white"
-                />
-              </svg>
-            </a>
-          </li>
-          <li class="header__navigate-menu-item">
-            <a href="./index.html">Home 1</a>
-          </li>
-          <li class="header__navigate-menu-item">
-            <a href="#">Service</a>
-          </li>
-          <li class="header__navigate-menu-item">
-            <a href="#">Gallery</a>
-          </li>
-          <li class="header__navigate-menu-item">
-            <a href="#">Blog</a>
-          </li>
-        </ul>
-        <button class="header__navigate-button">Contact</button>
-      </nav>
-      <button class="header__navigate-button-style-tablet icon-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-6 h-6"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
-      </button>
-    </header>
+        <nav class="header__navigate">
+          <ul class="header__navigate-menu">
+            <li class="header__navigate-menu-item sub-menu active">
+              <a href="#"
+                >Home
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="7"
+                  height="7"
+                  viewBox="0 0 7 7"
+                  fill="none"
+                >
+                  <line
+                    x1="3.5"
+                    y1="2.18557e-08"
+                    x2="3.5"
+                    y2="7"
+                    stroke="white"
+                  />
+                  <line
+                    x1="7"
+                    y1="3.5"
+                    x2="-4.37114e-08"
+                    y2="3.5"
+                    stroke="white"
+                  />
+                </svg>
+              </a>
+              <div class="drop-down-menu__header">
+                <ul>
+                  <li class="header__navigate-menu-item">
+                    <a href="./index.html">Home 1</a>
+                  </li>
+                  <li class="header__navigate-menu-item">
+                    <a href="./Home2.html">Home 2</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="header__navigate-menu-item">
+              <a href="#">About</a>
+            </li>
+            <li class="header__navigate-menu-item">
+              <a href="#">Service</a>
+            </li>
+            <li class="header__navigate-menu-item">
+              <a href="#">Gallery</a>
+            </li>
+            <li class="header__navigate-menu-item">
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+          <button class="header__navigate-button">Contact</button>
+        </nav>
+        <button class="header__navigate-button-style-tablet icon-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </header>
+    </div>
     <div class="bg-header"></div>
     <div class="content-container">
       <section class="slider">
@@ -347,7 +381,7 @@
               <h4
                 class="professional-teams__card-name dimension-card-h2__title"
               >
-                How much does a cost at our clinic?
+                How much does a consultation cost at our clinic?
               </h4>
               <p
                 class="professional-teams__card-desc-bottom dimension-card-h2__desc"
@@ -473,116 +507,122 @@
         </div>
       </section>
     </div>
-    <footer class="footer">
-      <div class="bottom-bg"></div>
-      <div class="footer-bg"></div>
-      <div class="footer__logo">
-        <div class="header__logo">
-          <div class="header__logo-icon">
-            <img
-              class="logo__bg"
-              src="./assets/img/Ellipse BG.png"
-              alt="logo__bg"
-            />
-            <img
-              class="logo__circle-white-1"
-              src="./assets/img/Ellipse White 1.png"
-              alt="logo1"
-            />
-            <img
-              class="logo__circle-white-2"
-              src="./assets/img/Ellipse White 2.png"
-              alt="logo2"
-            />
-            <div class="logo__rectangle-blue logo-color-footer"></div>
+    <div class="footer-container">
+      <footer class="footer">
+        <div class="bottom-bg"></div>
+        <div class="footer-bg"></div>
+        <div class="footer__logo">
+          <div class="header__logo">
+            <div class="header__logo-icon">
+              <img
+                class="logo__bg"
+                src="./assets/img/Ellipse BG.png"
+                alt="logo__bg"
+              />
+              <img
+                class="logo__circle-white-1"
+                src="./assets/img/Ellipse White 1.png"
+                alt="logo1"
+              />
+              <img
+                class="logo__circle-white-2"
+                src="./assets/img/Ellipse White 2.png"
+                alt="logo2"
+              />
+              <div class="logo__rectangle-blue logo-color-footer"></div>
+            </div>
+            <p class="header__logo-text logo-text-color-footer">Beautice</p>
           </div>
-          <p class="header__logo-text logo-text-color-footer">Beautice</p>
+          <div class="footer__logo-text">
+            <p class="footer__logo-desc-top">
+              <strong>Beautice</strong> is a Beauty Clinic WordPress Theme.
+            </p>
+            <em class="footer__logo-desc-mid"
+              >Baker Steet 101, NY, United States.</em
+            >
+            <p class="footer__logo-desc-bottom">
+              <em>+521 569 8966.</em>
+              <em>mail@company.com.</em>
+            </p>
+          </div>
+          <div class="footer-social-icons">
+            <img
+              class="footer-social-icon"
+              src="./assets/icons/facebook-f-white.png"
+              alt="icon"
+            />
+            <img
+              class="footer-social-icon"
+              src="./assets/icons/twitter-white.png"
+              alt="icon"
+            />
+            <img
+              class="footer-social-icon"
+              src="./assets/icons/linkedin-in-white.png"
+              alt="icon"
+            />
+            <img
+              class="footer-social-icon"
+              src="./assets/icons/youtube-white.png"
+              alt="icon"
+            />
+            <img
+              class="footer-social-icon"
+              src="./assets/icons/instagram-white.png"
+              alt="icon"
+            />
+          </div>
         </div>
-        <div class="footer__logo-text">
-          <p class="footer__logo-desc-top">
-            <strong>Beautice</strong> is a Beauty Clinic WordPress Theme.
+        <div class="footer__pages">
+          <p class="footer__pages-title">Pages</p>
+          <ul>
+            <li class="footer__pages-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="footer__pages-item">
+              <a href="#">About</a>
+            </li>
+            <li class="footer__pages-item">
+              <a href="#">Services</a>
+            </li>
+            <li class="footer__pages-item">
+              <a href="#">Gallery</a>
+            </li>
+            <li class="footer__pages-item">
+              <a href="#">Team</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__infor">
+          <p class="footer__pages-title position-parent-copyright">
+            Informations
           </p>
-          <em class="footer__logo-desc-mid"
-            >Baker Steet 101, NY, United States.</em
+          <ul>
+            <li class="footer__pages-item">
+              <a href="#">Terms & conditions</a>
+            </li>
+            <li class="footer__pages-item">
+              <a href="#">Privacy policy</a>
+            </li>
+            <li class="footer__pages-item">
+              <a href="#">Blog</a>
+            </li>
+            <li class="footer__pages-item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          <p class="footer__copyright">
+            © AltDesain Studio 2021 - All right reserved.
+          </p>
+          <button
+            id="scrollBtn"
+            class="footer__arrow-up icon-center"
+            onclick="scrollToTop()"
           >
-          <p class="footer__logo-desc-bottom">
-            <em>+521 569 8966.</em>
-            <em>mail@company.com.</em>
-          </p>
+            <img src="./assets/icons/arrow-up.png" alt="up" />
+          </button>
         </div>
-        <div class="footer-social-icons">
-          <img
-            class="footer-social-icon"
-            src="./assets/icons/facebook-f-white.png"
-            alt="icon"
-          />
-          <img
-            class="footer-social-icon"
-            src="./assets/icons/twitter-white.png"
-            alt="icon"
-          />
-          <img
-            class="footer-social-icon"
-            src="./assets/icons/linkedin-in-white.png"
-            alt="icon"
-          />
-          <img
-            class="footer-social-icon"
-            src="./assets/icons/youtube-white.png"
-            alt="icon"
-          />
-          <img
-            class="footer-social-icon"
-            src="./assets/icons/instagram-white.png"
-            alt="icon"
-          />
-        </div>
-      </div>
-      <div class="footer__pages">
-        <p class="footer__pages-title">Pages</p>
-        <ul>
-          <li class="footer__pages-item">
-            <a href="#">Home</a>
-          </li>
-          <li class="footer__pages-item">
-            <a href="#">About</a>
-          </li>
-          <li class="footer__pages-item">
-            <a href="#">Services</a>
-          </li>
-          <li class="footer__pages-item">
-            <a href="#">Gallery</a>
-          </li>
-          <li class="footer__pages-item">
-            <a href="#">Team</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__infor">
-        <p class="footer__pages-title position-parent-copyright">
-          Informations
-        </p>
-        <ul>
-          <li class="footer__pages-item">
-            <a href="#">Terms & conditions</a>
-          </li>
-          <li class="footer__pages-item">
-            <a href="#">Privacy policy</a>
-          </li>
-          <li class="footer__pages-item">
-            <a href="#">Blog</a>
-          </li>
-          <li class="footer__pages-item">
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-        <p class="footer__copyright">
-          © AltDesain Studio 2021 - All right reserved.
-        </p>
-        <button class="footer__arrow-up icon-center" onclick="scrollToTopBtn()">
-          <img src="./assets/icons/arrow-up.png" alt="up" />
-        </button>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
