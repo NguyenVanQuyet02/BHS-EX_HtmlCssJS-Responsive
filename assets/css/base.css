@@ -4,6 +4,12 @@
     --white-text-color: #fff;
     --pink-text-color: #FF64AE;
     --text-color-D8D: #D8DCFF;
+    --font-size-48: 48px;
+    --font-size-36: 36px;
+    --font-size-24: 24px;
+    --font-size-18: 18px;
+    --font-size-16: 16px;
+    --font-size-14: 14px;
 }
 
 * {
@@ -56,7 +62,7 @@ input:focus {
     color: #C5C5C5;
     min-width: 242.211px;
     min-height: 61.579px;
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-style: normal;
     font-weight: 400;
     line-height: normal;

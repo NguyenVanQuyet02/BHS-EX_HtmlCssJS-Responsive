@@ -83,7 +83,7 @@
     flex-shrink: 0;
     color: var(--primary-text-color);
     font-family: Poppins;
-    font-size: 24px;
+    font-size: var(--font-size-24);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -124,7 +124,7 @@
     text-decoration: none;
     color: var(--secondary-text-color);
     font-family: Poppins;
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -139,7 +139,7 @@
     background: var(--pink-text-color);
     border-color: transparent;
     color: var(--white-text-color);
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -168,7 +168,7 @@
 .slider__text-title {
     width: 430px;
     height: 128px;
-    font-size: 48px;
+    font-size: var(--font-size-48);
     font-weight: 600;
     line-height: 125%;
 }
@@ -176,7 +176,7 @@
 .slider__text-desc {
     width: 474px;
     height: 54px;
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-weight: 500;
     line-height: normal;
     letter-spacing: 1.6px;
@@ -191,7 +191,7 @@
     background: var(--pink-text-color);
     box-shadow: 0px 17px 22px 0px #FFEDF6;
     color: var(--white-text-color);
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -232,7 +232,7 @@
 
 .core-services__top-desc {
     color: var(--pink-text-color);
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-style: normal;
     font-weight: 600;
     line-height: 125%;
@@ -244,7 +244,7 @@
     flex-shrink: 0;
     color: var(--primary-text-color);
     margin: 12px auto;
-    font-size: 36px;
+    font-size: var(--font-size-36);
     font-style: normal;
     font-weight: 600;
     line-height: 125%;
@@ -256,7 +256,7 @@
     flex-shrink: 0;
     color: var(--secondary-text-color);
     margin-bottom: 82px;
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -295,7 +295,7 @@
     flex-shrink: 0;
     color: var(--primary-text-color);
     text-align: center;
-    font-size: 18px;
+    font-size: var(--font-size-18);
     font-style: normal;
     font-weight: 600;
     margin-bottom: 6px;
@@ -308,7 +308,7 @@
     height: 80px;
     flex-shrink: 0;
     color: var(--secondary-text-color);
-    font-size: 14px;
+    font-size: var(--font-size-14);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -341,7 +341,7 @@
 
 .content-about-us__text-top-desc {
     color: var(--pink-text-color);
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-style: normal;
     font-weight: 600;
     line-height: 125%;
@@ -352,7 +352,7 @@
     height: 52px;
     flex-shrink: 0;
     color: var(--primary-text-color);
-    font-size: 36px;
+    font-size: var(--font-size-36);
     font-style: normal;
     font-weight: 600;
     line-height: 125%;
@@ -364,7 +364,7 @@
     height: 196px;
     flex-shrink: 0;
     color: var(--secondary-text-color);
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -397,7 +397,7 @@
     background: var(--pink-text-color);
     box-shadow: 0px 17px 22px 0px #FFEDF6;
     color: var(--white-text-color);
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -415,7 +415,7 @@
     height: 27px;
     flex-shrink: 0;
     color: var(--secondary-text-color);
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -442,7 +442,7 @@
 
 .teams__title-desc--desc-top {
     color: var(--pink-text-color);
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-style: normal;
     font-weight: 600;
     line-height: 125%;
@@ -452,7 +452,7 @@
     color: var(--primary-text-color);
     height: 53px;
     flex-shrink: 0;
-    font-size: 36px;
+    font-size: var(--font-size-36);
     font-style: normal;
     font-weight: 600;
     line-height: 125%;
@@ -463,7 +463,7 @@
     height: 51px;
     flex-shrink: 0;
     color: var(--secondary-text-color);
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -503,7 +503,7 @@
 
 .professional-teams__card-desc-top {
     color: var(--pink-text-color);
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-style: normal;
     font-weight: 600;
     line-height: 125%;
@@ -514,7 +514,7 @@
     height: 37px;
     flex-shrink: 0;
     color: var(--primary-text-color);
-    font-size: 18px;
+    font-size: var(--font-size-18);
     font-style: normal;
     font-weight: 600;
     line-height: 125%;
@@ -527,7 +527,7 @@
     height: 63px;
     flex-shrink: 0;
     color: var(--secondary-text-color);
-    font-size: 14px;
+    font-size: var(--font-size-14);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -611,7 +611,7 @@
 
 .content-contact__form-top-desc {
     color: var(--pink-text-color);
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-style: normal;
     font-weight: 600;
     line-height: 125%;
@@ -623,7 +623,7 @@
     height: 97px;
     flex-shrink: 0;
     color: var(--primary-text-color);
-    font-size: 36px;
+    font-size: var(--font-size-36);
     font-style: normal;
     font-weight: 600;
     line-height: 125%;
@@ -636,7 +636,7 @@
     height: 28px;
     flex-shrink: 0;
     color: #8B8B8B;
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -666,7 +666,7 @@
     background: var(--pink-text-color);
     box-shadow: 0px 17px 22px 0px #FFEDF6;
     color: var(--white-text-color);
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -717,7 +717,7 @@
 
 .footer__logo-desc-top {
     color: #D7DBFF;
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -736,7 +736,7 @@
     display: block;
     color: #D7DBFF;
     font-family: Poppins;
-    font-size: 14px;
+    font-size: var(--font-size-14);
     font-weight: 500;
     line-height: normal;
     letter-spacing: 1.4px;
@@ -746,7 +746,7 @@
 .footer__logo-desc-bottom {
     height: 23px;
     color: #D7DBFF;
-    font-size: 14px;
+    font-size: var(--font-size-14);
     font-weight: 500;
     line-height: normal;
     letter-spacing: 1.4px;
@@ -794,7 +794,7 @@
     width: 129px;
     height: 31px;
     color: var(--white-text-color);
-    font-size: 18px;
+    font-size: var(--font-size-18);
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -822,7 +822,7 @@
 .footer__pages-item a {
     color: #D7DBFF;
     font-family: Poppins;
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -848,7 +848,7 @@
     height: 31.179px;
     color: #D7DBFF;
     text-align: right;
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -935,6 +935,14 @@
 }
 
 @media (max-width: 739px) {
+    :root {
+        --font-size-48: 26px;
+        --font-size-36: 18px;
+        --font-size-24: 20px;
+        --font-size-18: 14px;
+        --font-size-16: 12px;
+        --font-size-14: 10px;
+    }
 
     .header {
         padding: 0;
@@ -965,7 +973,6 @@
     }
 
     .slider__text-title {
-        font-size: 18px;
         width: 300px;
         height: auto;
         margin-bottom: 24px;
@@ -974,7 +981,6 @@
     .slider__text-desc {
         max-width: 350px;
         height: auto;
-        font-size: 10px;
     }
 
     .slider__img {
@@ -986,7 +992,6 @@
     .slider__text-btn {
         width: 130px;
         height: 48px;
-        font-size: 12px;
         border-color: transparent;
     }
 
@@ -1003,7 +1008,6 @@
     }
 
     .core-services__title {
-        font-size: 18px;
         max-width: 400px;
         height: auto;
     }
@@ -1013,11 +1017,9 @@
         max-width: 300px;
         margin: 0 auto;
         margin-bottom: 40px;
-        font-size: 10px;
     }
 
     .services-cards__item-desc {
-        font-size: 10px;
         max-width: 200px;
     }
 
@@ -1040,13 +1042,7 @@
         height: auto;
     }
 
-    .content-about-us__text-title {
-        font-size: 18px;
-
-    }
-
     .content-about-us__text-bottom-desc {
-        font-size: 10px;
         margin-bottom: 24px;
     }
 
@@ -1066,7 +1062,6 @@
 
         width: 130px;
         height: 48px;
-        font-size: 12px;
         border-color: transparent;
 
     }
@@ -1080,12 +1075,10 @@
     .about-us__text-button--watch-video span {
         width: 100px;
         height: 18px;
-        font-size: 12px;
         text-align: left;
     }
 
     .teams__title-desc--desc-bottom {
-        font-size: 12px;
         max-width: 300px;
         margin: 0 auto;
     }
@@ -1104,12 +1097,10 @@
 
     .professional-teams__card-desc-bottom {
         margin-bottom: 20px;
-        font-size: 12px;
     }
 
     .teams__title-desc--title {
         max-width: 350px;
-        font-size: 18px;
         height: auto;
     }
 
@@ -1201,12 +1192,10 @@
         width: 180px;
         height: 48px;
 
-        font-size: 12px;
 
     }
 
     .content-contact__form-title {
-        font-size: 18px;
         max-width: 320px;
         height: auto;
     }
@@ -1215,7 +1204,6 @@
         max-width: 320px;
         height: auto;
         margin-bottom: 30px;
-        font-size: 12px;
     }
 
     .footer {
@@ -1226,21 +1214,11 @@
         min-height: 470px;
     }
 
-
-
-    .footer__infor ul>li a,
-    .footer__pages ul>li a,
-    .footer__pages>p,
-    .footer__infor>p {
-        font-size: 10px;
-    }
-
     .footer__pages-title {
         width: auto;
         height: auto;
         margin-bottom: 0px;
     }
-
 
     .footer__pages-item {
         min-width: 80px;
@@ -1257,20 +1235,20 @@
         display: inline-block;
         margin-bottom: 60px;
         padding-left: 0px;
-        margin-left: -16px;
+        margin-left: -26px;
         position: relative;
     }
 
     .footer__pages {
         position: absolute;
         top: 170px;
-        right: 186px;
+        right: 174px;
     }
 
     .footer__infor {
         position: absolute;
         top: 170px;
-        right: 16px;
+        right: -6px;
     }
 
     .footer__copyright {
@@ -1286,7 +1264,6 @@
     .footer__logo-text>em,
     .footer__logo-text>p {
         padding: 0;
-        font-size: 10px;
         margin-bottom: 60px;
         margin: 8px 0px;
         max-width: 133px;
@@ -1439,5 +1416,3 @@
         margin-top: 42px;
     }
 }
-
-@media(min-width: 1025px) {}
