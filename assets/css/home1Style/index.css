@@ -157,7 +157,7 @@
     position: absolute;
     min-width: 86px;
     top: 100%;
-    left: -28px;
+    left: -36px;
     border-radius: 8px;
     overflow: hidden;
     height: auto;
@@ -179,7 +179,7 @@
     padding: 12px 20px;
     display: block;
     color: var(--secondary-text-color);
-    width: 116px;
+    /* width: 116px; */
 }
 
 .header__navigate-button {
