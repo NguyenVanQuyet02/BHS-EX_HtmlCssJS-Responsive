@@ -172,13 +172,13 @@
 
 .drop-down-menu__header ul>li a:hover {
     background-color: #d9dcf3;
-    color: #414880;
+    color: #414880 !important;
 }
 
 .drop-down-menu__header ul>li a {
     padding: 12px 20px;
     display: block;
-    color: var(--secondary-text-color);
+    color: var(--secondary-text-color) !important;
     /* width: 116px; */
 }
 
