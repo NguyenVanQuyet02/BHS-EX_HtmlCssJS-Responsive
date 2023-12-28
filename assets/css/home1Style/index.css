@@ -1187,8 +1187,9 @@
     }
 
     .drop-down-menu__header {
-        left: 0;
-        right: 0%;
+        left: -100%;
+        top: 0;
+        width: 100%;
     }
 
     .drop-down-menu__header ul>li {
