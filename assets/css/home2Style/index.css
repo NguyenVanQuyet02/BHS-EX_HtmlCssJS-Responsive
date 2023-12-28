@@ -7,7 +7,7 @@
 }
 
 .header__logo {
-    margin-right: 194px;
+    margin-right: 190px;
 }
 
 .header__navigate-menu-item {
@@ -32,14 +32,10 @@
     color: var(--white-text-color);
 }
 
-.active a {
+.active>a {
     color: var(--white-text-color) !important;
 }
 
-.header__navigate-button-style-tablet {
-    border: 1px solid #FFF;
-    background: rgba(255, 255, 255, 0.00);
-}
 
 .bg-header {
     width: 100%;
@@ -158,6 +154,7 @@
     border: 1px solid #9BA2E0;
     background: #FFF;
     padding: 31px 34px;
+    overflow: hidden;
     text-align: left;
 }
 
@@ -165,6 +162,7 @@
     width: 64px;
     height: 64px;
     flex-shrink: 0;
+    object-fit: cover;
     margin: 0;
     margin-bottom: 20px;
     border-radius: unset;
@@ -222,6 +220,12 @@
     height: 699.34px;
     background:
         url('../../img/Home2/Background-wcu.png') top left/100% 699.34px no-repeat;
+}
+
+.content-why-container {
+    max-width: 1440px;
+    padding: 0 150px;
+    margin: 0 auto;
 }
 
 .content-why {
@@ -311,6 +315,12 @@
     /* 20px */
 }
 
+.professional-container {
+    max-width: 1440px;
+    padding: 0 150px;
+    margin: 0 auto;
+}
+
 .mb-home2 {
     margin: 0;
     margin-bottom: 60px;
@@ -372,6 +382,12 @@
     flex-shrink: 0;
     background:
         url('../../img/Home2/Background\ Wave.png') top left/100% 1292.081px no-repeat;
+}
+
+.services-container {
+    max-width: 1440px;
+    padding: 0 150px;
+    margin: 0 auto;
 }
 
 .content-req-call-services {
@@ -459,58 +475,103 @@
     margin: 0 auto;
 }
 
-@media(max-width:1439px) {
-    .content-container {
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 0px 50px;
-    }
-
-    .slider__text {
-        margin-right: 0px;
-        text-align: left;
-    }
-
-
-}
 
 @media (max-width:1439px) {
+    .header-container {
+        margin-bottom: 60px;
+    }
+
     .header {
-        margin-bottom: 180px;
+        margin: 0;
+    }
+
+    .header__logo {
+        margin: 0;
+    }
+
+    .active>a {
+        color: var(--primary-text-color) !important;
+    }
+
+    .header__navigate-menu li a {
+        color: var(--secondary-text-color);
+    }
+
+    .content-why-container,
+    .professional-container,
+    .services-container,
+    .content-container {
+        width: 100%;
+        padding: 0 16px;
+        margin: 0 auto;
     }
 
     .slider {
         justify-content: center;
         flex-wrap: wrap-reverse;
         row-gap: 24px;
-        margin-bottom: 420px;
+        margin-bottom: 300px;
     }
 
     .slider__text {
+        width: 100%;
         margin: 0;
+        text-align: center;
     }
 
+    .slider__text-desc,
     .slider__text-title {
-        min-width: 644px;
+        width: 100%;
         height: auto;
     }
 
     .content-about-us__img {
         margin-right: 0;
+        width: 60%;
+        height: auto;
     }
 
     .content-about-us {
-        margin-bottom: 100px;
+        margin-bottom: 60px;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap-reverse;
     }
 
-    .bg-why-choosing-us {
-        top: 2110px;
+    .content-about-us__text {
+        margin-bottom: 36px;
+    }
+
+    .content-about-us__text-title {
+        width: 100%;
+        height: auto;
+    }
+
+    .content-about-us__text-bottom-desc {
+        width: 88%;
+        height: auto;
+        margin: 22px auto;
+    }
+
+
+    .content-why-container {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-bottom: 200px;
     }
 
     .content-why {
         margin-bottom: 90px;
+        justify-content: space-around;
+    }
+
+    .bg-wave-line {
+        top: -446px;
+    }
+
+    .bg-why-choosing-us {
+        top: -170px;
     }
 
     .content-why__statistical {
@@ -519,12 +580,44 @@
         margin-top: -116px;
     }
 
+    .professional-teams__title-desc {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
     .content-professional-teams-container {
         margin-bottom: 100px;
     }
 
+    .professional-teams__card {
+        min-width: 28%;
+        text-align: center;
+        height: auto;
+    }
+
+    .professional-teams__card-desc-bottom {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .professional-teams__card-desc-top {
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+
+    .col-gap-card-h2 {
+        flex-wrap: wrap;
+    }
+
+    .card-mobile-styles {
+        width: 100% !important;
+        max-height: 249px;
+        padding: 0px 0px !important;
+    }
+
     .content-req-call-services {
         flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
         margin-bottom: 90px;
     }
@@ -540,7 +633,7 @@
     }
 
     .call-services__text {
-        max-width: 500px;
+        width: 88%;
         text-align: center;
     }
 
@@ -551,11 +644,11 @@
 
 @media(max-width:739px) {
     .header-container {
-        padding: 0 10px;
+        padding: 41px 16px 30px 16px;
     }
 
     .header {
-        margin-bottom: 80px;
+        margin-bottom: 0;
         justify-content: space-between;
     }
 
@@ -599,6 +692,10 @@
         margin-right: 10px;
     }
 
+    .content-about-us__text {
+        margin-bottom: 0px;
+    }
+
     .content-about-us {
         display: flex;
         flex-direction: column;
@@ -608,8 +705,9 @@
 
     .content-about-us__text-bottom-desc,
     .content-about-us__text-title {
-        max-width: 320px;
+        width: 88%;
         height: auto;
+        margin: 12px auto;
     }
 
     .content-about-us__text-bottom-desc {
@@ -634,6 +732,10 @@
         width: 74%;
         height: auto;
         padding: 20px 20px;
+    }
+
+    .content-why-container {
+        margin-bottom: 40px;
     }
 
     .content-why {
@@ -701,7 +803,7 @@
     }
 
     .bg-wave-line {
-        top: 1912px;
+        top: -180px;
         width: 224px;
         height: 180.34px;
         background:
@@ -709,7 +811,7 @@
     }
 
     .bg-why-choosing-us {
-        top: 2070px;
+        top: -40px;
         height: 299.34px;
         background:
             url('../../img/Home2/Background-wcu.png') top left/100% 299.34px no-repeat;
@@ -741,11 +843,7 @@
     }
 
 
-    .card-mobile-styles {
-        width: 100% !important;
-        height: auto !important;
-        padding: 0px 0px !important;
-    }
+
 
     .card--mobile-styles {
         padding: 0;
@@ -755,19 +853,21 @@
     }
 
     .card-text {
+        width: 100%;
         padding: 12px 18px;
     }
 
     .dimension-card-h2__title {
         font-size: 14px;
-        width: 188px;
+        width: 80%;
         height: auto;
+        margin: 0 auto;
         margin-bottom: 6px;
     }
 
     .dimension-card-h2__desc {
         font-size: 10px;
-        width: 188px;
+        width: 94%;
         height: auto;
         margin-bottom: 6px;
     }
@@ -788,8 +888,9 @@
 
     .call-services__text p {
         font-size: 10px;
-        width: 320px;
+        width: 80%;
         height: auto;
+        margin: 0 auto;
         margin-bottom: 26px;
     }
 
@@ -830,12 +931,10 @@
     }
 }
 
-@media(min-width: 740px) and (max-width: 1024px) {
-    .header-container {
-        padding: 0px 20px;
-    }
+@media(min-width: 740px) and (max-width: 1439px) {
 
-    .header {
+    .header-container {
+
         margin-bottom: 100px;
     }
 
@@ -852,7 +951,7 @@
         justify-content: center;
         flex-wrap: wrap-reverse;
         row-gap: 24px;
-        margin-bottom: 180px;
+        margin-bottom: 140px;
     }
 
     .slider__text {
@@ -896,11 +995,11 @@
     }
 
     .content-professional-teams-container {
-        margin-bottom: 0px;
+        margin-bottom: 200px;
     }
 
     .professional-teams__cards {
-        margin-bottom: 230px;
+        margin-bottom: 0;
     }
 
     .content-req-call-services {
@@ -908,17 +1007,17 @@
         margin-top: 82px;
     }
 
-    .col-gap-card-h2 {
-        margin-bottom: 0;
-    }
-
     .content-why {
-        margin-bottom: 120px;
+        margin-bottom: 0;
         justify-content: space-around;
     }
 
     .mb-home2 {
         margin-bottom: 22px;
+    }
+
+    .content-why__text {
+        margin-top: 90px;
     }
 
     .content-why__text h3 {
@@ -938,19 +1037,34 @@
 
     .content-why__statistical {
         column-gap: 40px;
-        margin-top: -76px;
+        margin-top: 0;
+    }
+
+    .call-services__text h3,
+    .call-services__text p {
+        width: 88%;
+        margin: 0 auto;
+    }
+
+    .call-services__input {
+        max-width: 100%;
+        width: 100%;
     }
 
     .call-services__input-desc {
         width: 100%;
+        display: block;
+        margin-top: 18px;
+        text-align: center !important;
     }
 
     .call-services__input-input {
-        max-width: 320px;
-        margin-left: 36px;
+        width: 80%;
+        margin-left: 0;
+        margin: 0 auto;
     }
 
-    .bg-wave-line {
+    /* .bg-wave-line {
         top: 2333px;
         width: 524px;
         height: 350.34px;
@@ -963,9 +1077,10 @@
         height: 499.34px;
         background:
             url('../../img/Home2/Background-wcu.png') top left/100% 499.34px no-repeat;
-    }
+    } */
 
     .bg-services {
+        display: none;
         top: 2130px;
 
         height: 1892.081px;
