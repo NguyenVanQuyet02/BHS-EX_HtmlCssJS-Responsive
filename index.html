@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/home1Style/index.css" />
     <script>
+      // handle collapse home selection
+      function toggleCollapse() {
+        const collapseDiv = document.querySelector(".collapse");
+        collapseDiv.classList.toggle("expanded");
+      }
+
       // handle show menu into header
       function handleShowMenuHeader() {
         var menu = document.getElementById("menu");
@@ -102,12 +108,12 @@
         <div id="menu">
           <nav class="header__navigate navigate-styles-tablet">
             <ul class="header__navigate-menu">
-              <li class="header__navigate-menu-item sub-menu active">
-                <a href="#"
+              <li class="header__navigate-menu-item sub-menu active collapse">
+                <a href="#" onclick="toggleCollapse()"
                   >Home
                   <img src="./assets/icons/Plus Icon.png" alt="plus" />
                 </a>
-                <div class="drop-down-menu__header">
+                <div class="drop-down-menu__header sub-2">
                   <ul>
                     <li class="header__navigate-menu-item">
                       <a href="./index.html">Home 1</a>
