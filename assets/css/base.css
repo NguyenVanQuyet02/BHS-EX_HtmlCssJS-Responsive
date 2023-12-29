@@ -49,6 +49,10 @@ input {
     border-color: transparent;
 }
 
+textarea {
+    resize: vertical;
+}
+
 textarea:focus,
 input:focus {
     outline: none;
@@ -67,11 +71,10 @@ a {
 
 .input-style-default-size-M {
     border: 1px solid #D9DDFE;
-    width: 242.211px;
-    height: 61.579px;
+    width: 46%;
     background: var(--white-text-color);
     color: #C5C5C5;
-    min-width: 242.211px;
+    min-width: 100px;
     min-height: 61.579px;
     font-size: var(--font-size-16);
     font-style: normal;
@@ -84,7 +87,7 @@ a {
 }
 
 .input-size-L {
-    width: 520px;
+    width: 100%;
     display: block;
     margin-bottom: 38.32px;
 }

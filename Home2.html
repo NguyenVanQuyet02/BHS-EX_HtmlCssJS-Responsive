@@ -14,14 +14,30 @@
     <link rel="stylesheet" href="./assets/css/home1Style/index.css" />
     <link rel="stylesheet" href="./assets/css/home2Style/index.css" />
     <script>
+      // handle show menu into header
       function handleShowMenuHeader() {
         var menu = document.getElementById("menu");
         menu.classList.toggle("active");
+        if (menu.classList.contains("active")) {
+          disableScroll();
+        } else {
+          enableScroll();
+        }
       }
+      // handle show btn to top when scroll
       window.onscroll = function () {
         scrollFunction();
       };
-
+      // handle disable scroll
+      function disableScroll() {
+        document.body.style.overflow = "hidden";
+        document.documentElement.style.overflow = "hidden";
+      }
+      // handle enable scroll
+      function enableScroll() {
+        document.body.style.overflow = "";
+        document.documentElement.style.overflow = "";
+      }
       function scrollFunction() {
         if (
           document.body.scrollTop > 640 ||
@@ -34,13 +50,6 @@
       }
 
       function scrollToTop() {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      }
-
-      function scrollToTopBtn() {
         window.scrollTo({
           top: 0,
           behavior: "smooth",
@@ -353,7 +362,7 @@
       </div>
     </div>
     <div class="professional-container">
-      <section class="content-professional-teams-container">
+      <section class="content-professional-teams-container div-blog">
         <div class="professional-teams__title-desc mb-home2">
           <p class="teams__title-desc--desc-top">The Blog</p>
           <h2 class="teams__title-desc--title">Our latest news</h2>
@@ -366,7 +375,7 @@
             class="professional-teams__card dimension-card-h2 card--mobile-styles"
           >
             <img
-              class="dimension-card-h2__img card-mobile-styles"
+              class="dimension-card-h2__img card2-h2 card-mobile-styles"
               src="./assets/img/Home2/c1.jpg"
               alt="avt"
             />
@@ -403,7 +412,7 @@
             class="professional-teams__card dimension-card-h2 card--mobile-styles"
           >
             <img
-              class="dimension-card-h2__img card-mobile-styles"
+              class="dimension-card-h2__img card2-h2 card-mobile-styles"
               src="./assets/img/Home2/c2.jpg"
               alt="avt"
             />
@@ -440,7 +449,7 @@
             class="professional-teams__card dimension-card-h2 card--mobile-styles"
           >
             <img
-              class="dimension-card-h2__img card-mobile-styles"
+              class="dimension-card-h2__img card2-h2 card-mobile-styles"
               src="./assets/img/Home2/c3.jpg"
               alt="avt"
             />

@@ -13,14 +13,30 @@
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/home1Style/index.css" />
     <script>
+      // handle show menu into header
       function handleShowMenuHeader() {
         var menu = document.getElementById("menu");
         menu.classList.toggle("active");
+        if (menu.classList.contains("active")) {
+          disableScroll();
+        } else {
+          enableScroll();
+        }
       }
+      // handle show btn to top when scroll
       window.onscroll = function () {
         scrollFunction();
       };
-
+      // handle disable scroll
+      function disableScroll() {
+        document.body.style.overflow = "hidden";
+        document.documentElement.style.overflow = "hidden";
+      }
+      // handle enable scroll
+      function enableScroll() {
+        document.body.style.overflow = "";
+        document.documentElement.style.overflow = "";
+      }
       function scrollFunction() {
         if (
           document.body.scrollTop > 640 ||
@@ -33,13 +49,6 @@
       }
 
       function scrollToTop() {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      }
-
-      function scrollToTopBtn() {
         window.scrollTo({
           top: 0,
           behavior: "smooth",
@@ -213,7 +222,7 @@
         </div>
         <img
           class="content-about-us__img"
-          src="./assets/img//unsplash_LRXYS0tSyGc.png"
+          src="./assets/img/aboutUsImg.jpg"
           alt="img"
         />
       </section>
@@ -227,7 +236,11 @@
         </div>
         <div class="professional-teams__cards">
           <div class="professional-teams__card tablet-styles mobile-styles">
-            <img src="./assets/img/unsplash_pTrhfmj2jDA.png" alt="avt" />
+            <img
+              class="card-img"
+              src="./assets/img/unsplash_pTrhfmj2jDA.png"
+              alt="avt"
+            />
             <p class="professional-teams__card-desc-top">Surgeon</p>
             <h4 class="professional-teams__card-name">Briyan Nevalli</h4>
             <p class="professional-teams__card-desc-bottom">
@@ -249,14 +262,22 @@
           <div
             class="professional-teams__card tablet-styles mobile-styles teams__card-center"
           >
-            <img src="./assets/img/unsplash_FVh_yqLR9eA.png" alt="avt" />
+            <img
+              class="card-center-img"
+              src="./assets/img/unsplash_FVh_yqLR9eA.png"
+              alt="avt"
+            />
             <p class="professional-teams__card-desc-top">Dermatologist</p>
             <h4 class="professional-teams__card-name">Bella sebastian</h4>
-            <p class="professional-teams__card-desc-bottom">
+            <p
+              class="professional-teams__card-desc-bottom card-center-desc-bottom"
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
               aliquam, purus sit
             </p>
-            <div class="professional-teams__card-social-media">
+            <div
+              class="professional-teams__card-social-media card-center-social-media"
+            >
               <div class="social-media--item">
                 <img src="./assets/icons/twitter.png" alt="social" />
               </div>
@@ -269,7 +290,11 @@
             </div>
           </div>
           <div class="professional-teams__card tablet-styles mobile-styles">
-            <img src="./assets/img/unsplash_mEZ3PoFGs_k.png" alt="avt" />
+            <img
+              class="card-img"
+              src="./assets/img/unsplash_mEZ3PoFGs_k.png"
+              alt="avt"
+            />
             <p class="professional-teams__card-desc-top">Stylist expert</p>
             <h4 class="professional-teams__card-name">Lilly Adams</h4>
             <p class="professional-teams__card-desc-bottom">
