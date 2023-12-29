@@ -525,7 +525,31 @@
     margin: 0 auto;
 }
 
+@media (max-width:1439px) {
+    .header-container {
+        overflow: hidden;
+    }
+
+    .bg-header {
+        width: 100%;
+        background: url('../../img/Home2/Background\ Slider.png') top left/1440px 918px no-repeat;
+        background-position: center;
+    }
+
+    .content-why-container {
+        overflow: hidden;
+    }
+
+    .bg-why-choosing-us {
+        top: 2340px;
+        width: 100%;
+        background: url('../../img/Home2/Background-wcu.png') top left/1440px auto no-repeat;
+        background-position: center;
+    }
+}
+
 @media(max-width:1264px) {
+
     .header__navigate-menu li a {
         color: var(--secondary-text-color);
     }
@@ -536,6 +560,8 @@
         column-gap: 5px;
         color: #414880 !important;
     }
+
+
 }
 
 @media (max-width:1024px) {
@@ -617,7 +643,6 @@
 
 
     .content-why-container {
-        position: relative;
         width: 100%;
         height: auto;
         margin-bottom: 200px;
@@ -713,6 +738,7 @@
 @media(max-width:739px) {
     .header-container {
         padding: 41px 16px 30px 16px;
+        overflow: hidden;
     }
 
     .header {
@@ -732,8 +758,9 @@
     }
 
     .bg-header {
-        height: 568px;
-        background: url('../../img/Home2/Background\ Slider.png') top left/100% 568px no-repeat;
+        width: 100%;
+        background: url('../../img/Home2/Background\ Slider.png') top left/914px auto no-repeat;
+        /* background-position: center; */
     }
 
     .slider {
@@ -888,11 +915,18 @@
     }
 
     .bg-why-choosing-us {
+        top: 1710px;
+        width: 100%;
+        background: url('../../img/Home2/Background-wcu.png') top left/750px auto no-repeat;
+        background-position: center;
+    }
+
+    /* .bg-why-choosing-us {
         top: -40px;
         height: 299.34px;
         background:
             url('../../img/Home2/Background-wcu.png') top left/100% 299.34px no-repeat;
-    }
+    } */
 
     .bg-services {
         top: 3113px;
@@ -1013,6 +1047,7 @@
     .header-container {
         margin-top: 0;
         margin-bottom: 100px;
+        overflow: hidden;
     }
 
     .header__logo {
@@ -1020,15 +1055,16 @@
     }
 
     .bg-header {
-        height: 818px;
-        background: url('../../img/Home2/Background\ Slider.png') top left/100% 818px no-repeat;
+        width: 100%;
+        background: url('../../img/Home2/Background\ Slider.png') top left/1280px auto no-repeat;
+        /* background-position: center; */
     }
 
     .slider {
         justify-content: center;
         flex-wrap: wrap-reverse;
         row-gap: 24px;
-        margin-bottom: 140px;
+        margin-bottom: 200px;
     }
 
     .slider__text {
@@ -1082,6 +1118,13 @@
     .content-req-call-services {
         justify-content: center;
         margin-top: 82px;
+    }
+
+    .bg-why-choosing-us {
+        top: 2020px;
+        width: 100%;
+        background: url('../../img/Home2/Background-wcu.png') top left/1440px auto no-repeat;
+        background-position: center;
     }
 
     .content-why {
@@ -1152,21 +1195,6 @@
         margin: 0 auto;
     }
 
-    /* .bg-wave-line {
-        top: 2333px;
-        width: 524px;
-        height: 350.34px;
-        background:
-            url('../../img/Home2/Wave\ Line.png') top left/524px 350.34px no-repeat;
-    }
-
-    .bg-why-choosing-us {
-        top: 2432px;
-        height: 499.34px;
-        background:
-            url('../../img/Home2/Background-wcu.png') top left/100% 499.34px no-repeat;
-    } */
-
     .bg-services {
         display: none;
         top: 2130px;
@@ -1176,4 +1204,6 @@
         background:
             url('../../img/Home2/Background\ Wave.png') top left/100% 1892.081px no-repeat;
     }
+
+
 }
