@@ -18,7 +18,16 @@
         const collapseDiv = document.querySelector(".collapse");
         collapseDiv.classList.toggle("expanded");
       }
-
+      // handle toggle menu
+      document.addEventListener("click", function (event) {
+        const menu = document.querySelector(".collapse");
+        const targetElement = event.target;
+        if (!menu.contains(targetElement)) {
+          if (menu.classList.contains("expanded")) {
+            menu.classList.remove("expanded");
+          }
+        }
+      });
       // handle show menu into header
       function handleShowMenuHeader() {
         var menu = document.getElementById("menu");
